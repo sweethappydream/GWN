@@ -5,6 +5,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10913,6 +10914,14 @@ textarea.form-control-lg {
   color: var(--bs-light-blue) !important;
 }
 
+.text-yellow {
+  color: var(--bs-yellow);
+}
+
+.text-gray {
+  color: #999999;
+}
+
 /* .btn-dark-blue:hover {
   color: #fff;
   background-color: var(--bs-dark-blue);
@@ -11017,6 +11026,13 @@ textarea.form-control-lg {
 .flyout-menu-item:hover {
   background-color: var(--bs-light-blue);
 }
+.flyout-menu-item > i {
+  font-size: 17px;
+  -webkit-text-stroke: 0.3px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
 
 .page-tab {
   display: flex;
@@ -11112,10 +11128,12 @@ textarea.form-control-lg {
   padding: 30px;
   align-items:center;
 }
-.commission-card svg {
+.commission-card > i {
+  color: #CFD8DF;
   position: absolute;
   right: 15px;
   top: 15px;
+  -webkit-text-stroke: 1px;
 }
 .commission-card .circle {
   width: 92px;
@@ -11142,6 +11160,7 @@ textarea.form-control-lg {
   color: #999999;
 }
 
+
 .commission-card-fill {
   position: relative;
   width: 440px;
@@ -11153,10 +11172,12 @@ textarea.form-control-lg {
   background-color: #009ef5;
   color: white;
 }
-.commission-card-fill svg {
+.commission-card-fill > i {
+  color: white;
   position: absolute;
   right: 15px;
   top: 15px;
+  -webkit-text-stroke: 1px;
 }
 .commission-card-fill .circle {
   width: 92px;
@@ -11205,7 +11226,7 @@ textarea.form-control-lg {
   background-color: #ebf7ff;
   color: #0191ff;
 }
-.booked > svg {
+.booked > i {
   padding-right: 5px;
 }
 
@@ -11255,7 +11276,7 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
 }
-.round-outline > svg {
+.round-outline > i {
   padding-right: 5px;
 }
 
@@ -11270,7 +11291,8 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
 }
-.round-fill > svg {
+.round-fill > i {
+  color: white;
   padding-right: 5px;
 }
 
@@ -11281,6 +11303,9 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.circle > i {
+  font-size: 30px;
 }
 
 .create-note-bright {
