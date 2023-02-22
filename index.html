@@ -14,7 +14,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
 	<link type="text/css" rel="stylesheet" href="index.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet" />
+
 	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
@@ -401,10 +403,76 @@
 		</div>
 
 		<p>CONFIGURABLE</p>
-
 		<div class="p-4">
-			
+			<div class="d-flex align-items-center">
+				<div class="dropdown">
+					<button class="btn-dropdown dropdown-toggle column2" type="button" id="dropdownMenuButton1"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						All
+						<i class="bi bi-chevron-down text-interactive-blue"></i>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+					</ul>
+				</div>
+
+				<div class="px-2"></div>
+
+				<div class="dropdown">
+					<button class="btn-dropdown dropdown-toggle column3" type="button" id="dropdownMenuButton1"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						All
+						<i class="bi bi-chevron-down text-interactive-blue"></i>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+					</ul>
+				</div>
+
+				<div class="px-2"></div>
+
+				<div class="dropdown">
+					<div class="btn-dropdown dropdown-toggle column4" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						<span>All</span>
+						<i class="bi bi-chevron-down text-interactive-blue"></i>
+					</div>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+					</ul>
+				</div>
+
+				<div class="px-2"></div>
+
+				<div class="round-outline text-white bg-interactive-blue">Apply</div>
+
+			</div>
+
+			<br>
+
+			<div class="d-flex align-items-center">
+				<div class="range-slider flat" data-ticks-position='top'
+					style='--min:0; --max:100; --value-a:12; --value-b:35; --suffix:""; --text-value-a:"12"; --text-value-b:"35";'>
+					<input type="range" min="0" max="100" value="12"
+						oninput="this.parentNode.style.setProperty('--value-a',this.value); this.parentNode.style.setProperty('--text-value-a', JSON.stringify(this.value))">
+					<output></output>
+					<input type="range" min="0" max="100" value="35"
+						oninput="this.parentNode.style.setProperty('--value-b',this.value); this.parentNode.style.setProperty('--text-value-b', JSON.stringify(this.value))">
+					<output></output>
+					<div class='range-slider__progress'></div>
+				</div>
+			</div>
+
 		</div>
+
+
+		<p></p>
 
 	</div>
 </body>
