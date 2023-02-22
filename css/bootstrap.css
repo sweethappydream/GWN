@@ -11752,32 +11752,32 @@ fieldset:disabled .btn {
 }
 
 .btn-dropdown {
-  font-weight: 400;
+  font-weight: 800;
   line-height: 1.5;
   color: #212529;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
   background-color: white;
   border: 1px solid #cfd8df;
-  padding: 0.375rem 0.75rem;
+  padding: 8px 20px;
   font-size: 1rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  display: flex;
 }
-.column2 > i {
-  padding-left: 100px;
+.column2 {
+  width: 150px;
 }
-.column3 > i {
-  padding-left: 150px;
+.column3 {
+  width: 225px;
 }
-.column4 > i {
-  padding-left: 200px;
+.column4 {
+  width: 300px;
 }
+.column2 > i, .column3 > i, .column4 > i{
+  position: absolute;
+  right: 20px;
+  vertical-align: middle;
+  top: 14px;
+}
+
 
 .range-slider.flat {
   --thumb-size: 20px;
@@ -11791,8 +11791,6 @@ fieldset:disabled .btn {
 }
 
 .range-slider {
-  width: clamp(300px, 50vw, 800px);
-  min-width: 200px;
   --primary-color: var(--bs-interactive-blue);
   --value-offset-y: var(--ticks-gap);
   --value-active-color: white;
